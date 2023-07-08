@@ -70,7 +70,7 @@ const Header = () => {
       <div
         onMouseOver={() => setHide(false)}
         onMouseOut={() => setHide(true)}
-        className={`h-60 z-20 duration-300 py-10 transition ease-in-out bg-white bg-opacity-90 w-full absolute z-10 hover:block ${
+        className={`z-20 duration-300 py-10 transition ease-in-out bg-white bg-opacity-90 w-full absolute z-10 hover:block ${
           hide ? "hidden" : "block"
         } `}
       >

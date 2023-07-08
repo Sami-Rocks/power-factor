@@ -28,6 +28,14 @@ import about_gallery_5 from "./../assets/images/Image-009.webp";
 import about_gallery_4 from "./../assets/images/Image-013.webp";
 import about_gallery_6 from "./../assets/images/Image-008.webp";
 
+import LeftTextSection from "../components/LeftTextSections";
+import RightTextSection from "../components/RightTextSections";
+import ContentSection from "../components/ContentSections";
+import WideImageComponent from "../components/WideImageComponent";
+
+import map from "../assets/images/map.webp"
+
+
 const About = () => {
   const scrollref = useRef(null);
 
@@ -208,64 +216,104 @@ const About = () => {
         </div>
       </div>
 
+      <div id="history">
+        <div className="max-w-7xl text-left px-10 my-5">
+          <h2 className="text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">
+            Our History
+          </h2>
+          <p className="mt-2 text-lg leading-8 text-gray-600">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
+            est quidem accusamus sint perferendis animi deleniti nobis,
+            reprehenderit dicta nemo? Voluptates voluptas molestiae totam
+            nostrum praesentium dicta quo, similique aperiam atque dolores
+            repellat odio deleniti nulla culpa! Explicabo voluptates quibusdam
+            expedita qui. Quam, ea suscipit! Blanditiis, animi fuga?
+            Perspiciatis commodi veniam quo cum rem consequuntur voluptatum quia
+            laboriosam, consectetur praesentium dolor error aliquam debitis ut
+            accusantium nobis suscipit saepe. Libero doloremque accusamus
+            dignissimos molestiae delectus fugit ipsum consectetur mollitia
+            tempora?
+          </p>
+        </div>
+        <RightTextSection />
+        <LeftTextSection />
+      </div>
+
+      <div id="vision">
+        <ContentSection />
+      </div>
+
       <div
         className="py-16 bg-gradient-to-br via-secondary from-secondary to-primary"
         id="values"
       >
-        <p className="text-center font-bold text-4xl text-white">
-          What we Value
-        </p>
-        <p
-          data-aos="fade-top"
-          className="text-white text-center text-base mx-16 py-4"
-        >
-          To be the preferred company of choice for the provision of design,
-          project management, construction and logistics services. This we plan
-          to achieve by :
-        </p>
-        <div
-          data-aos="fade-top"
-          data-aos-offset="100"
-          className="grid md:grid-cols-2 lg:grid-cols-4 py-10 px-10 gap-8 justify-center"
-        >
-          <div className="flex flex-col items-center md:items-start">
-            <img src={security} className="w-16 h-16" alt="" />
-            <p className="text-white text-xl py-5 text-center md:text-left">
-              Fostering a culture where safety comes first.
-            </p>
-          </div>
+        <div>
+          <p className="text-center font-bold text-4xl text-white">
+            What we Value
+          </p>
+          <p
+            data-aos="fade-top"
+            className="text-white text-center text-base mx-16 py-4"
+          >
+            To be the preferred company of choice for the provision of design,
+            project management, construction and logistics services. This we
+            plan to achieve by :
+          </p>
           <div
             data-aos="fade-top"
-            data-aos-offset="200"
-            className="flex flex-col items-center md:items-start"
+            data-aos-offset="100"
+            className="grid md:grid-cols-2 lg:grid-cols-4 py-10 px-10 gap-8 justify-center"
           >
-            <img src={share} className="w-16 h-16" alt="" />
-            <p className="text-white text-xl py-5 text-center md:text-left">
-              Working in a collaborative way.
-            </p>
-          </div>
-          <div
-            data-aos="fade-top"
-            data-aos-offset="300"
-            className="flex flex-col items-center md:items-start"
-          >
-            <img src={right} className="w-16 h-16" alt="" />
-            <p className="text-white text-xl py-5 text-center md:text-left">
-              Being ethical in the way we do business and promoting this
-              behavior within our work force.
-            </p>
-          </div>
-          <div
-            data-aos="fade-top"
-            data-aos-offset="400"
-            className="flex flex-col items-center md:items-start"
-          >
-            <img src={electricity} className="w-16 h-16" alt="" />
-            <p className="text-white text-xl py-5 text-center md:text-left">
-              Empowering our workforce to be innovative.
-            </p>
+            <div className="flex flex-col items-center md:items-start">
+              <img src={security} className="w-16 h-16" alt="" />
+              <p className="text-white text-xl py-5 text-center md:text-left">
+                Fostering a culture where safety comes first.
+              </p>
+            </div>
+            <div
+              data-aos="fade-top"
+              data-aos-offset="200"
+              className="flex flex-col items-center md:items-start"
+            >
+              <img src={share} className="w-16 h-16" alt="" />
+              <p className="text-white text-xl py-5 text-center md:text-left">
+                Working in a collaborative way.
+              </p>
+            </div>
+            <div
+              data-aos="fade-top"
+              data-aos-offset="300"
+              className="flex flex-col items-center md:items-start"
+            >
+              <img src={right} className="w-16 h-16" alt="" />
+              <p className="text-white text-xl py-5 text-center md:text-left">
+                Being ethical in the way we do business and promoting this
+                behavior within our work force.
+              </p>
+            </div>
+            <div
+              data-aos="fade-top"
+              data-aos-offset="400"
+              className="flex flex-col items-center md:items-start"
+            >
+              <img src={electricity} className="w-16 h-16" alt="" />
+              <p className="text-white text-xl py-5 text-center md:text-left">
+                Empowering our workforce to be innovative.
+              </p>
+            </div>
           </div>
         </div>
+        <div>
+          <LeftTextSection />
+          <RightTextSection />
+          <LeftTextSection />
+          <ContentSection/>
+          <RightTextSection />
+        </div>
+      </div>
+      
+      <div id="where-we-operate">
+        <WideImageComponent image={map} contrast="difference"/>
       </div>
 
       <div className="py-20" id="partners">

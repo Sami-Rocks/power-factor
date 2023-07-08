@@ -1,11 +1,14 @@
 import { createBrowserRouter } from "react-router-dom";
-import { lazy } from "react";
-import SuspendedComponent from "../components/SuspendedComponent";
 import App from "../App";
-const LazyHome = lazy(() => import("../pages/Home"));
-const LazyAbout = lazy(() => import("../pages/About"));
-const LazyBusiness = lazy(() => import("../pages/Business"));
-const LazyContact = lazy(() => import("../pages/Contact"));
+import Home from "../layouts/home";
+import About from "../layouts/About";
+import Business from "../layouts/Business";
+import Sustainability from "../layouts/Sustainability";
+import Media from "../layouts/Media";
+import Contact from "../layouts/Contact";
+import People from "../layouts/People";
+import Csrs from "../layouts/CSRS";
+
 
 const router = createBrowserRouter([
   {
@@ -14,35 +17,35 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: (
-          <SuspendedComponent>
-            <LazyHome />
-          </SuspendedComponent>
-        ),
+        element: <Home />,
       },
       {
         path: "/about",
-        element: (
-          <SuspendedComponent>
-            <LazyAbout />
-          </SuspendedComponent>
-        ),
+        element: <About />,
       },
       {
         path: "/business",
-        element: (
-          <SuspendedComponent>
-            <LazyBusiness />
-          </SuspendedComponent>
-        ),
+        element: <Business />,
+      },
+      {
+        path: "/sustainability",
+        element: <Sustainability />,
+      },
+      {
+        path: "/media",
+        element: <Media />,
+      },
+      {
+        path: "/people",
+        element: <People />,
       },
       {
         path: "/contact",
-        element: (
-          <SuspendedComponent>
-            <LazyContact />
-          </SuspendedComponent>
-        ),
+        element: <Contact />,
+      },
+      {
+        path: "/csrs",
+        element: <Csrs/>
       },
     ],
   },
