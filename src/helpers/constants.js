@@ -92,83 +92,80 @@ export const navigation = [
       },
     ],
   },
-
-  /* =========================BEGIN: This section has been commented out because they have no content=======================*/
-  // {
-  //   title: "Sustainability",
-  //   link: "/sustainability",
-  //   children: [
-  //     {
-  //       title: "Our Approach",
-  //       link: "/sustainability#approach",
-  //     },
-  //     {
-  //       title: "Our Priorities and Focus Areas",
-  //       link: "/sustainability#priorities",
-  //     },
-  //     {
-  //       title: "Our Commitments and Targets",
-  //       link: "/sustainability#commitments",
-  //     },
-  //     {
-  //       title: "Our Performance and Reporting",
-  //       link: "/sustainability#performance",
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: "Media",
-  //   link: "/media",
-  //   children: [
-  //     {
-  //       title: "Regulatory News",
-  //       link: "/media#news",
-  //     },
-  //     {
-  //       title: "Results, Reports & Presentations",
-  //       link: "/media#results",
-  //     },
-  //     {
-  //       title: "Annual Report 2022",
-  //       link: "/media#report",
-  //     },
-  //     {
-  //       title: "Share Price Information",
-  //       link: "/media#share-price",
-  //     },
-  //     {
-  //       title: "Financial Calendar",
-  //       link: "/media#calendar",
-  //     },
-  //     {
-  //       title: "Shareholder Centre",
-  //       link: "/media#shareholders",
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: "Our People",
-  //   link: "/people",
-  //   children: [
-  //     {
-  //       title: "Current Vacancies",
-  //       link: "/people#vacancies",
-  //     },
-  //     {
-  //       title: "Our Graduate Development Programme",
-  //       link: "/people#graduate#programme",
-  //     },
-  //     {
-  //       title: "Frequently Asked Questions",
-  //       link: "/people#faq",
-  //     },
-  //     {
-  //       title: "Recruitment Fraud",
-  //       link: "/people#recruitment-fraud",
-  //     },
-  //   ],
-  // },
-    /* =========================END: This section has been commented out because they have no content=======================*/
+  {
+    title: "Sustainability",
+    link: "/sustainability",
+    children: [
+      {
+        title: "Our Approach",
+        link: "/sustainability#approach",
+      },
+      {
+        title: "Our Priorities and Focus Areas",
+        link: "/sustainability#priorities",
+      },
+      {
+        title: "Our Commitments and Targets",
+        link: "/sustainability#commitments",
+      },
+      {
+        title: "Our Performance and Reporting",
+        link: "/sustainability#performance",
+      },
+    ],
+  },
+  {
+    title: "Media",
+    link: "/media",
+    children: [
+      {
+        title: "Regulatory News",
+        link: "/media#news",
+      },
+      {
+        title: "Results, Reports & Presentations",
+        link: "/media#results",
+      },
+      {
+        title: "Annual Report 2022",
+        link: "/media#report",
+      },
+      {
+        title: "Share Price Information",
+        link: "/media#share-price",
+      },
+      {
+        title: "Financial Calendar",
+        link: "/media#calendar",
+      },
+      {
+        title: "Shareholder Centre",
+        link: "/media#shareholders",
+      },
+    ],
+  },
+  {
+    title: "Our People",
+    link: "/people",
+    children: [
+      {
+        title: "Current Vacancies",
+        link: "/people#vacancies",
+      },
+      {
+        title: "Our Graduate Development Programme",
+        link: "/people#graduate#programme",
+      },
+      {
+        title: "Frequently Asked Questions",
+        link: "/people#faq",
+      },
+      {
+        title: "Recruitment Fraud",
+        link: "/people#recruitment-fraud",
+      },
+    ],
+  },
   {
     title: "CSRS",
     link: "/csrs",

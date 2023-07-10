@@ -172,9 +172,8 @@ const About = () => {
             className="mySwiper"
             spaceBetween={50}
             slidesPerView={3}
-            modules={[Pagination, Autoplay]}
+            modules={[Autoplay]}
             autoplay
-            pagination
           >
             <SwiperSlide>
               <img
@@ -219,42 +218,6 @@ const About = () => {
               />
             </SwiperSlide>
           </Swiper>
-          {/* 
-          <img
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            src={about_gallery_2}
-            className="rounded-lg max-h-80 w-full object-cover"
-            alt=""
-          />
-          <img
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            src={about_gallery_3}
-            className="rounded-lg max-h-80 w-full object-cover"
-            alt=""
-          />
-          <img
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            src={about_gallery_4}
-            className="rounded-lg max-h-80 w-full object-cover"
-            alt=""
-          />
-          <img
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            src={about_gallery_5}
-            className="rounded-lg max-h-80 w-full object-cover"
-            alt=""
-          />
-          <img
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            src={about_gallery_6}
-            className="rounded-lg max-h-80 w-full object-cover"
-            alt=""
-          /> */}
         </div>
         <div className="px-10 py-10 block lg:hidden">
           <Swiper

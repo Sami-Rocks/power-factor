@@ -12,6 +12,14 @@ import home_gallery_4 from "./../assets/images/Image-011.webp";
 import home_gallery_5 from "./../assets/images/Image-004.webp";
 import home_gallery_6 from "./../assets/images/Image-002.webp";
 
+import { Autoplay } from "swiper/modules";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/pagination";
+
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
@@ -122,49 +130,108 @@ const Home = () => {
             MEDIA
           </p>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10">
-            <img
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom"
-              src={home_gallery_1}
-              className="rounded-lg max-h-80 w-full object-cover"
-              alt=""
-            />
-            <img
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom"
-              src={home_gallery_2}
-              className="rounded-lg max-h-80 w-full object-cover"
-              alt=""
-            />
-            <img
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom"
-              src={home_gallery_3}
-              className="rounded-lg max-h-80 w-full object-cover"
-              alt=""
-            />
-            <img
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom"
-              src={home_gallery_4}
-              className="rounded-lg max-h-80 w-full object-cover"
-              alt=""
-            />
-            <img
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom"
-              src={home_gallery_5}
-              className="rounded-lg max-h-80 w-full object-cover"
-              alt=""
-            />
-            <img
-              data-aos="fade-up"
-              data-aos-anchor-placement="top-bottom"
-              src={home_gallery_6}
-              className="rounded-lg max-h-80 w-full object-cover"
-              alt=""
-            />
+          <div className="px-10 py-20 hidden lg:block">
+          <Swiper
+            className="mySwiper"
+            spaceBetween={50}
+            slidesPerView={3}
+            modules={[Autoplay]}
+            autoplay
+          >
+            <SwiperSlide>
+              <img
+                src={home_gallery_1}
+                className="rounded-lg max-h-72 w-[30rem] object-cover"
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={home_gallery_2}
+                className="rounded-lg max-h-72 w-[30rem] object-cover"
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={home_gallery_3}
+                className="rounded-lg max-h-72 w-[30rem] object-cover"
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={home_gallery_4}
+                className="rounded-lg max-h-72 w-[30rem] object-cover"
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={home_gallery_5}
+                className="rounded-lg max-h-72 w-[30rem] object-cover"
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={home_gallery_6}
+                className="rounded-lg max-h-72 w-[30rem] object-cover"
+                alt=""
+              />
+            </SwiperSlide>
+          </Swiper>
+          </div>
+          <div className="px-10 py-10 block lg:hidden">
+          <Swiper
+            className="mySwiper"
+            spaceBetween={30}
+            modules={[Autoplay]}
+            autoplay
+          >
+            <SwiperSlide>
+              <img
+                src={home_gallery_1}
+                className="rounded-lg max-h-80 w-[30rem] object-cover"
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={home_gallery_2}
+                className="rounded-lg max-h-80 w-[30rem] object-cover"
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={home_gallery_3}
+                className="rounded-lg max-h-80 w-[30rem] object-cover"
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={home_gallery_4}
+                className="rounded-lg max-h-80 w-[30rem] object-cover"
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={home_gallery_5}
+                className="rounded-lg max-h-80 w-[30rem] object-cover"
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={home_gallery_6}
+                className="rounded-lg max-h-80 w-[30rem] object-cover"
+                alt=""
+              />
+            </SwiperSlide>
+          </Swiper>
           </div>
         </div>
       </div>

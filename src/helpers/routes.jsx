@@ -10,12 +10,11 @@ import People from "../layouts/People";
 import Csrs from "../layouts/CSRS";
 import PageNotFound from "../layouts/PageNotFound";
 
-
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <PageNotFound/>,
+    errorElement: <PageNotFound />,
     children: [
       {
         path: "/",
@@ -29,25 +28,28 @@ const router = createBrowserRouter([
         path: "/business",
         element: <Business />,
       },
-      {
-        path: "/sustainability",
-        element: <Sustainability />,
-      },
-      {
-        path: "/media",
-        element: <Media />,
-      },
-      {
-        path: "/people",
-        element: <People />,
-      },
+
+      /* =========================BEGIN: This section has been commented out because they have no content=======================*/
+      // {
+      //   path: "/sustainability",
+      //   element: <Sustainability />,
+      // },
+      // {
+      //   path: "/media",
+      //   element: <Media />,
+      // },
+      // {
+      //   path: "/people",
+      //   element: <People />,
+      // },
+      /* =========================END: This section has been commented out because they have no content=======================*/
       {
         path: "/contact",
         element: <Contact />,
       },
       {
         path: "/csrs",
-        element: <Csrs/>
+        element: <Csrs />,
       },
     ],
   },
