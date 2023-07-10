@@ -1,4 +1,4 @@
-export default function index({children}) {
+export default function index({children, imageSource}) {
   return (
     <div className="overflow-hidden py-10 my-5">
       <div className="mx-auto px-10">
@@ -12,7 +12,7 @@ export default function index({children}) {
           </div>
           <div className="place-self-center">
           <img
-            src="https://picsum.photos/id/234/300/200"
+            src={imageSource}
             alt="Product screenshot"
             className="w-[20rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[45rem] md:-ml-4 lg:-ml-0"
             width={2432}

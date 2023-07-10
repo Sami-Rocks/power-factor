@@ -32,8 +32,57 @@ import LeftTextSection from "../components/LeftTextSections";
 import RightTextSection from "../components/RightTextSections";
 import ContentSection from "../components/ContentSections";
 import WideImageComponent from "../components/WideImageComponent";
+import TeamComponent from "../components/TeamComponent";
+
+import { Autoplay, Pagination } from "swiper/modules";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/autoplay";
+import "swiper/css/pagination";
 
 import map from "../assets/images/map.webp";
+
+const people = [
+  {
+    name: 'Dr. Frank Kulor',
+    role: 'Co-Founder / CEO',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    name: 'Ekua Attah Obimpeh (Mrs.)',
+    role: 'Human Resource Manager',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    name: 'Michael Kumordzi',
+    role: 'Head of Civil Department',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    name: 'Emmanuel Amissah',
+    role: 'Head of Electrical Department',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    name: 'Thomas Obodai',
+    role: 'Financial & Logistic Manager',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+  {
+    name: 'Randsford Gyambrah',
+    role: 'HSE Manager',
+    imageUrl:
+      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+  },
+]
+
 
 const About = () => {
   const scrollref = useRef(null);
@@ -118,14 +167,59 @@ const About = () => {
         </div>
       </div>
       <div className="bg-secondary py-20">
-        <div className="grid px-10 py-20 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10">
-          <img
-            data-aos="fade-up"
-            data-aos-anchor-placement="top-bottom"
-            src={about_gallery_1}
-            className="rounded-lg max-h-80 w-full object-cover"
-            alt=""
-          />
+        <div className="px-10 py-20 hidden lg:block">
+          <Swiper
+            className="mySwiper"
+            spaceBetween={50}
+            slidesPerView={3}
+            modules={[Pagination, Autoplay]}
+            autoplay
+            pagination
+          >
+            <SwiperSlide>
+              <img
+                src={about_gallery_1}
+                className="rounded-lg max-h-80 w-[30rem] object-cover"
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={about_gallery_2}
+                className="rounded-lg max-h-80 w-[30rem] object-cover"
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={about_gallery_3}
+                className="rounded-lg max-h-80 w-[30rem] object-cover"
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={about_gallery_4}
+                className="rounded-lg max-h-80 w-[30rem] object-cover"
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={about_gallery_5}
+                className="rounded-lg max-h-80 w-[30rem] object-cover"
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={about_gallery_6}
+                className="rounded-lg max-h-80 w-[30rem] object-cover"
+                alt=""
+              />
+            </SwiperSlide>
+          </Swiper>
+          {/* 
           <img
             data-aos="fade-up"
             data-aos-anchor-placement="top-bottom"
@@ -160,7 +254,95 @@ const About = () => {
             src={about_gallery_6}
             className="rounded-lg max-h-80 w-full object-cover"
             alt=""
+          /> */}
+        </div>
+        <div className="px-10 py-10 block lg:hidden">
+          <Swiper
+            className="mySwiper"
+            spaceBetween={30}
+            modules={[Pagination, Autoplay]}
+            autoplay
+            pagination
+          >
+            <SwiperSlide>
+              <img
+                src={about_gallery_1}
+                className="rounded-lg max-h-80 w-[30rem] object-cover"
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={about_gallery_2}
+                className="rounded-lg max-h-80 w-[30rem] object-cover"
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={about_gallery_3}
+                className="rounded-lg max-h-80 w-[30rem] object-cover"
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={about_gallery_4}
+                className="rounded-lg max-h-80 w-[30rem] object-cover"
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={about_gallery_5}
+                className="rounded-lg max-h-80 w-[30rem] object-cover"
+                alt=""
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img
+                src={about_gallery_6}
+                className="rounded-lg max-h-80 w-[30rem] object-cover"
+                alt=""
+              />
+            </SwiperSlide>
+          </Swiper>
+          {/* 
+          <img
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            src={about_gallery_2}
+            className="rounded-lg max-h-80 w-full object-cover"
+            alt=""
           />
+          <img
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            src={about_gallery_3}
+            className="rounded-lg max-h-80 w-full object-cover"
+            alt=""
+          />
+          <img
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            src={about_gallery_4}
+            className="rounded-lg max-h-80 w-full object-cover"
+            alt=""
+          />
+          <img
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            src={about_gallery_5}
+            className="rounded-lg max-h-80 w-full object-cover"
+            alt=""
+          />
+          <img
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            src={about_gallery_6}
+            className="rounded-lg max-h-80 w-full object-cover"
+            alt=""
+          /> */}
         </div>
       </div>
       <div>
@@ -216,10 +398,10 @@ const About = () => {
       </div>
 
       <div id="purpose">
-        <LeftTextSection>
+        <LeftTextSection imageSource="https://picsum.photos/300/200">
           <div>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Our Purpose
+              Our Purpose
             </p>
             <p className="mt-6 text-lg leading-8 text-gray-600">
               At our company, we rise to the challenge of building a world that
@@ -231,7 +413,7 @@ const About = () => {
       </div>
 
       <div id="history">
-        <ContentSection heading="History">
+        <ContentSection heading="History" imageSource="https://picsum.photos/300/200">
           <div>
             <p>
               Power Factor Limited is an aggressively evolving and rapidly
@@ -285,7 +467,7 @@ const About = () => {
             Our Vision
           </h2>
         </div>
-        <RightTextSection>
+        <RightTextSection imageSource="https://picsum.photos/300/200">
           <div>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               To be the preferred company of choice for the provision of Design,
@@ -313,7 +495,7 @@ const About = () => {
             </p>
           </div>
         </RightTextSection>
-        <LeftTextSection>
+        <LeftTextSection imageSource="https://picsum.photos/300/200">
           <div>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               To create value for our customers by providing exceptional service
@@ -351,7 +533,7 @@ const About = () => {
             Our Mission
           </h2>
         </div>
-        <RightTextSection>
+        <RightTextSection imageSource="https://picsum.photos/300/200">
           <div>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               To provide a responsive, safe, cost effective and reliable
@@ -454,7 +636,7 @@ const About = () => {
               fulfilling customers’ individual needs in all our business lines
             </p>
           </div>
-          <LeftTextSection>
+          <LeftTextSection imageSource="https://picsum.photos/300/200">
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl">
               Integrity
             </p>
@@ -478,7 +660,7 @@ const About = () => {
               building a better world.
             </p>
           </LeftTextSection>
-          <RightTextSection>
+          <RightTextSection imageSource="https://picsum.photos/300/200">
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl">
               Professionalism
             </p>
@@ -504,7 +686,7 @@ const About = () => {
               stakeholders and contribute to building a better world.
             </p>
           </RightTextSection>
-          <ContentSection>
+          <ContentSection imageSource="https://picsum.photos/300/200">
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl">
               Safety
             </p>
@@ -567,7 +749,7 @@ const About = () => {
               </li>
             </ol>
           </ContentSection>
-          <LeftTextSection>
+          <LeftTextSection imageSource="https://picsum.photos/300/200">
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl">
               Quality
             </p>
@@ -596,7 +778,7 @@ const About = () => {
               fairly and reduce friction within the customer experience.
             </p>
           </LeftTextSection>
-          <ContentSection>
+          <ContentSection imageSource="https://picsum.photos/300/200">
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl">
               Innovation
             </p>
@@ -724,7 +906,7 @@ const About = () => {
         </WideImageComponent>
       </div>
 
-      <div className="py-20" id="partners">
+      <div className="bg-gradient-to-br via-secondary from-secondary to-primary py-20" id="partners">
         <p className="text-center text-3xl mx-5">
           Strategic Alliances & Partnerships
         </p>
@@ -778,6 +960,22 @@ const About = () => {
             />
           </dir>
         </div>
+      </div>
+
+      <div id="leadership" className="">
+        <TeamComponent>
+        {people.map((person) => (
+              <li key={person.name}>
+                <div className="flex items-center gap-x-6">
+                  <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" />
+                  <div>
+                    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
+                    <p className="text-sm font-semibold leading-6 text-gray-600">{person.role}</p>
+                  </div>
+                </div>
+              </li>
+            ))}
+        </TeamComponent>
       </div>
 
       <div

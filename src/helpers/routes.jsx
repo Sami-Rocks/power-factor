@@ -8,12 +8,14 @@ import Media from "../layouts/Media";
 import Contact from "../layouts/Contact";
 import People from "../layouts/People";
 import Csrs from "../layouts/CSRS";
+import PageNotFound from "../layouts/PageNotFound";
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <PageNotFound/>,
     children: [
       {
         path: "/",

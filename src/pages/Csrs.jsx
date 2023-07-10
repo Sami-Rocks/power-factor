@@ -2,38 +2,11 @@ import ContentSection from "../components/ContentSections";
 import RightTextSection from "../components/RightTextSections";
 import LeftTextSection from "../components/LeftTextSections";
 
-import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
-} from "@heroicons/react/20/solid";
-
-const features = [
-  {
-    name: "Push to deploy.",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: CloudArrowUpIcon,
-  },
-  {
-    name: "SSL certificates.",
-    description:
-      "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
-    icon: LockClosedIcon,
-  },
-  {
-    name: "Database backups.",
-    description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-    icon: ServerIcon,
-  },
-];
-
 export default function Csrs() {
   return (
     <div>
       <div id="diversity">
-        <ContentSection heading="Diversity">
+        <ContentSection heading="Diversity" imageSource="https://picsum.photos/300/200">
           <div>
             <p className="mt-8">
               We recognize that diversity is a key driver of our competitiveness
@@ -140,7 +113,7 @@ export default function Csrs() {
             these values in all our dealings.
           </p>
         </div>
-        <RightTextSection>
+        <RightTextSection imageSource="https://picsum.photos/300/200">
           <div>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Ethic Policy Statement
@@ -167,7 +140,7 @@ export default function Csrs() {
             </p>
           </div>
         </RightTextSection>
-        <LeftTextSection>
+        <LeftTextSection imageSource="https://picsum.photos/300/200">
           <div>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Our Code of Conduct
@@ -183,7 +156,7 @@ export default function Csrs() {
         </LeftTextSection>
       </div>
       <div id="compliance">
-        <ContentSection heading="Compliance">
+        <ContentSection heading="Compliance" imageSource="https://picsum.photos/300/200">
           <div>
             <p>
               Our company has put in place arrangements to help ensure that it

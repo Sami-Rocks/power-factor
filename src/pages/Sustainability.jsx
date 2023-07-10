@@ -3,7 +3,7 @@ import ContentSection from "../components/ContentSections"
 
 const Sustainability = () => {
   return (
-    <ContentSection>
+    <ContentSection imageSource="https://picsum.photos/300/200">
     <div>
       <p>
         Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget risus
