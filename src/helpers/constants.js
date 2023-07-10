@@ -20,6 +20,10 @@ export const navigation = [
         link: "/about#vision",
       },
       {
+        title:"Our Mission",
+        link:"/about#mission"
+      },
+      {
         title: "Our Leadership",
         link: "/about#leadership",
       },
@@ -158,7 +162,7 @@ export const navigation = [
       },
       {
         title: "Recruitment Fraud",
-        link: "/people#recruitment#fraud",
+        link: "/people#recruitment-fraud",
       },
     ],
   },
@@ -168,12 +172,16 @@ export const navigation = [
     full_title: "Corperate Social Responsibility & Sustainability",
     children: [
       {
-        title: "Health and Safety & Environment",
+        title: "Health, Safety & Environment",
         link: "/csrd#safety",
       },
       {
-        title: "Ethics and Complaince",
+        title: "Ethics",
         link: "/csrs#ethics",
+      },
+      {
+        title: "Compliance",
+        link: "/csrs#compliance"
       },
       {
         title: "Human Rights & Diversity & Inclusion",
