@@ -1,11 +1,6 @@
 import { useRef } from "react";
 import SVGs from "../helpers/SVGs";
 
-import electricity from "./../assets/images/values/electricity.svg";
-import share from "./../assets/images/values/collaboration.svg";
-import right from "./../assets/images/values/right.svg";
-import security from "./../assets/images/values/security.svg";
-
 import elcos from "./../assets/images/companies/elcos-logo.png";
 import gvd from "./../assets/images/companies/GVD.png";
 import hascelik from "./../assets/images/companies/hascelik.png";
@@ -29,60 +24,22 @@ import about_gallery_4 from "./../assets/images/Image-013.webp";
 import about_gallery_6 from "./../assets/images/Image-008.webp";
 
 import LeftTextSection from "../components/LeftTextSections";
-import RightTextSection from "../components/RightTextSections";
-import ContentSection from "../components/ContentSections";
 import WideImageComponent from "../components/WideImageComponent";
-import TeamComponent from "../components/TeamComponent";
 
 import { Autoplay, Pagination } from "swiper/modules";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+
+import electricity from "./../assets/images/values/electricity.svg";
+import share from "./../assets/images/values/collaboration.svg";
+import right from "./../assets/images/values/right.svg";
+import security from "./../assets/images/values/security.svg";
 
 import "swiper/css";
 import "swiper/css/autoplay";
 import "swiper/css/pagination";
 
 import map from "../assets/images/map.webp";
-
-const people = [
-  {
-    name: 'Dr. Frank Kulor',
-    role: 'Co-Founder / CEO',
-    imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  },
-  {
-    name: 'Ekua Attah Obimpeh (Mrs.)',
-    role: 'Human Resource Manager',
-    imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  },
-  {
-    name: 'Michael Kumordzi',
-    role: 'Head of Civil Department',
-    imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  },
-  {
-    name: 'Emmanuel Amissah',
-    role: 'Head of Electrical Department',
-    imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  },
-  {
-    name: 'Thomas Obodai',
-    role: 'Financial & Logistic Manager',
-    imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  },
-  {
-    name: 'Randsford Gyambrah',
-    role: 'HSE Manager',
-    imageUrl:
-      'https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
-  },
-]
-
 
 const About = () => {
   const scrollref = useRef(null);
@@ -375,159 +332,6 @@ const About = () => {
         </LeftTextSection>
       </div>
 
-      <div id="history">
-        <ContentSection heading="History" imageSource="https://picsum.photos/300/200">
-          <div>
-            <p>
-              Power Factor Limited is an aggressively evolving and rapidly
-              growing company gradually becoming a well-established entity in
-              the Ghanaian, Sierra Leone, Liberia and the United Kingdom. It is
-              extensively carving its reputation and establishment in the field
-              Electrical/Electronic, Computer, Mechanical engineering and Civil.
-              By combining our experience and local knowledge we are becoming
-              the sub-contractor of choice for major international contractors
-              such Subsea 7, Halliburton and GE Power Factor limited has been
-              registered as a limited liability company since 23rd June 2006 and
-              with branches in Sierra Leone as Power Factor (SL) Limited,
-              Liberia, and the United Kingdom (UK). It has been in operation for
-              the past Seventeen (17) years and has established strong ties with
-              major institutions.
-            </p>
-            <p>The company carries out major activities such as;</p>
-            <ul
-              role="list"
-              className="mt-8 space-y-8 text-gray-600 list-decimal list-inside"
-            >
-              <li>Energy management systems</li>
-              <li>Engineering design and construction</li>
-              <li>
-                {" "}
-                EPC contracting in civil, mechanical, electrical and
-                Instrumentation
-              </li>
-              <li>Environmental impact assessment</li>
-              <li>
-                Assets integrity management and Safety integrity level
-                assessment
-              </li>
-              <li>Supply of general goods and services</li>
-              <li>Shipping and logistics</li>
-              <li>Information Technology Financial Management</li>
-              <li>General Procurement and Stocking of Spares</li>
-              <li>Constructions and Infrastructure development</li>
-            </ul>
-            <p className="mt-8">
-              Part of its achievements is the execution of major projects both
-              locally and internationally
-            </p>
-          </div>
-        </ContentSection>
-      </div>
-
-      <div id="vision">
-        <div className="max-w-7xl text-left px-10 my-5">
-          <h2 className="text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">
-            Our Vision
-          </h2>
-        </div>
-        <RightTextSection imageSource="https://picsum.photos/300/200">
-          <div>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              To be the preferred company of choice for the provision of Design,
-              Project Management, Logistics and construction Services.
-            </p>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              We aspire to become the preferred company for the provision of
-              Design, Project Management, Logistics, and Construction Services.
-              We are committed to delivering high-quality services that meet the
-              needs of our clients and exceed their expectations. Our services
-              are designed to provide end-to-end solutions that cover all
-              aspects of the project lifecycle, from site acquisition to
-              construction and build-out. We have a team of experienced
-              professionals who are dedicated to delivering projects on time,
-              within budget, and to the highest quality standards. Our services
-              are tailored to meet the unique needs of each client, and we work
-              closely with them to ensure that we understand their requirements
-              and deliver solutions that meet their specific needs. We are
-              committed to transparency and accountability in all our
-              operations, and we strive to build long-term relationships with
-              our clients based on trust, integrity, and mutual respect. We
-              believe that by providing exceptional services, we can help our
-              clients achieve their goals and contribute to building a better
-              world.
-            </p>
-          </div>
-        </RightTextSection>
-        <LeftTextSection imageSource="https://picsum.photos/300/200">
-          <div>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              To create value for our customers by providing exceptional service
-              while using a professional approach.
-            </p>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              We strive to deliver superior quality projects to our clients
-              while meeting budget and schedule goals. We are committed to
-              providing exceptional service to our customers while using a
-              professional approach. We strive to deliver superior quality
-              projects to our clients while meeting budget and schedule goals.
-              Our focus is on creating value for our customers by delivering
-              projects that meet their needs and exceed their expectations. To
-              achieve this, we follow a customer-centric approach that involves
-              understanding their needs, defining the scope of work, and
-              developing a project plan that meets their requirements. We
-              believe that good project management is essential to delivering
-              successful projects, and we have standard processes in place to
-              deal with all contingencies. We recognize that customer
-              satisfaction is a critical building block to our success, and we
-              use customer feedback to improve our services continually. We
-              believe that by providing exceptional service, we can build
-              long-term relationships with our customers and to be widely
-              recognized within the community for our continuing commitment to
-              customer service and client satisfaction contribute to building a
-              better world.
-            </p>
-          </div>
-        </LeftTextSection>
-      </div>
-
-      <div id="mission">
-        <div className="max-w-7xl text-left px-10 mt-10 mb-5">
-          <h2 className="text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">
-            Our Mission
-          </h2>
-        </div>
-        <RightTextSection imageSource="https://picsum.photos/300/200">
-          <div>
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              To provide a responsive, safe, cost effective and reliable
-              solutions to our clients by forming a symbiotic relationship and
-              fulfilling customers’ individual needs in all our business lines
-            </p>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              At our company, we are committed to providing our clients with
-              responsive, safe, cost-effective, and reliable solutions. We
-              believe that forming a symbiotic relationship with our clients is
-              essential to fulfilling their individual needs in all our business
-              lines. To achieve this, we follow a customer-centric approach that
-              involves understanding our clients' needs, defining the scope of
-              work, and developing a project plan that meets their requirements.
-              We believe that good project management is essential to delivering
-              successful projects, and we have standard processes in place to
-              deal with all contingencies. We recognize that customer
-              satisfaction is a critical building block to our success, and we
-              use customer feedback to improve our services continually. We
-              believe that by providing exceptional service, we can build
-              long-term relationships with our clients and contribute to
-              building a better world. We develop secure, scalable, and
-              cost-effective solutions that support our clients, employees, and
-              partners to work effectively. We believe that diversity of people
-              with unique experiences, diverse backgrounds, and individual
-              differences creates a dynamic and innovative workplace.
-            </p>
-          </div>
-        </RightTextSection>
-      </div>
-
       <div
         className="py-16 bg-gradient-to-br via-secondary from-secondary to-primary"
         id="values"
@@ -587,222 +391,6 @@ const About = () => {
               </p>
             </div>
           </div>
-        </div>
-        <div>
-          <div className="max-w-7xl text-left px-10 my-5">
-            <h2 className="text-3xl tracking-tight font-bold text-gray-300 sm:text-4xl">
-              Values
-            </h2>
-            <p className="mt-2 text-lg  tracking-tight text-gray-300 sm:text-2xl">
-              To provide a responsive, safe, cost effective and reliable
-              solutions to our clients by forming a symbiotic relationship and
-              fulfilling customers’ individual needs in all our business lines
-            </p>
-          </div>
-          <LeftTextSection imageSource="https://picsum.photos/300/200">
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl">
-              Integrity
-            </p>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              we hold ourselves to the highest ethical standards and believe
-              that our continued success is based on sustaining the
-              relationships that keep our business growing. We recognize that
-              open and honest communication is vital to the lasting success of
-              the firm. We believe that transparency and accountability are
-              critical components of building trust with our clients, employees,
-              shareholders, and regulators. We are committed to promoting
-              ethical behavior and environments in the workplace, which includes
-              respecting others, being honest, and communicating bad news as
-              well as good news. We believe that ethical behavior is essential
-              to building a reputation for integrity and driving financial
-              performance. We establish a company-wide code of ethics and
-              provide ongoing training and education to our employees to ensure
-              that we uphold the highest standards of ethical conduct. We
-              believe that by acting ethically and responsibly, we can build
-              long-term relationships with our stakeholders and contribute to
-              building a better world.
-            </p>
-          </LeftTextSection>
-          <RightTextSection imageSource="https://picsum.photos/300/200">
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl">
-              Professionalism
-            </p>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              we are dedicated to providing professional services that reflect
-              our commitment to competence, dependability, and excellence. We
-              believe that our projects are a reflection of who we are as a
-              company. To achieve this, we follow a customer-centric approach
-              that involves understanding our clients' needs, defining the scope
-              of work, and developing a project plan that meets their
-              requirements. We believe that good project management is essential
-              to delivering successful projects, and we have standard processes
-              in place to deal with all contingencies. We recognize that
-              customer satisfaction is a critical building block to our success,
-              and we use customer feedback to improve our services continually.
-              We believe that by providing exceptional service, we can build
-              long-term relationships with our clients and contribute to
-              building a better world. We are committed to transparency and
-              accountability in all our operations, and we strive to build
-              long-term relationships with our clients based on trust,
-              integrity, and mutual respect. We believe that by acting ethically
-              and responsibly, we can build long-term relationships with our
-              stakeholders and contribute to building a better world.
-            </p>
-          </RightTextSection>
-          <ContentSection imageSource="https://picsum.photos/300/200">
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl">
-              Safety
-            </p>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              We place utmost efforts to identify barriers and challenges for
-              improving workplace safety and health culture. We believe that a
-              safe and healthy workplace is essential to building a more
-              inclusive culture and attracting and retaining top talent. We
-              recognize that managing safety and health is an ongoing process
-              that requires continuous improvement and a commitment to
-              excellence. We believe that by providing exceptional service, we
-              can build long-term relationships with our customers and
-              contribute to building a better world. Here are some ways we
-              identify barriers and challenges for improving workplace safety
-              and health culture:
-            </p>
-            <ol
-              role="list"
-              className="mt-8 space-y-8 text-gray-100 list-decimal list-inside"
-            >
-              <li>
-                We invest in safety and health management systems that help us
-                focus on maintaining a safe and healthy workplace
-              </li>
-              <li>
-                We encourage employee’s participation in safety and health by
-                letting them know they will be expected to follow safe work
-                practices
-              </li>
-              <li>
-                We respond to all reports of unsafe or unhealthy conditions or
-                work practices and make it our business to find out why injuries
-                or illnesses occur.
-              </li>
-              <li>
-                We go beyond the regulations and address all hazards, whether or
-                not they are covered by laws
-              </li>
-              <li>
-                We involve employees by including safety and health
-                responsibilities in job descriptions and making following safe
-                work practices a part of their job.
-              </li>
-              <li>
-                We invest in employees’ safety training and correct techniques
-                to demonstrate our commitment to safety
-              </li>
-              <li>
-                We create training programs that help employees understand their
-                role in creating a safe working environment and know how they
-                can contribute to achieving goals.
-              </li>
-              <li>
-                We foster a culture of safety that encourages employees to take
-                risks within the team and feel safe doing so.
-              </li>
-              <li>
-                We adopt systematic methods for building a culture that fosters
-                ethical behavior and integrity-preserving workplace
-              </li>
-            </ol>
-          </ContentSection>
-          <LeftTextSection imageSource="https://picsum.photos/300/200">
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl">
-              Quality
-            </p>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              Customer value is a critical factor in our company, and we strive
-              to deliver products and services that meet our customers' needs
-              and exceed their expectations. We believe that customer value is a
-              measure of all the costs and benefits associated with a product or
-              service, including price, quality, and what the product or service
-              can do for the customer. We recognize that customers weigh product
-              value relative to cost to make balanced purchasing decisions. We
-              believe that delivering customer value is key to maintaining
-              long-term relationships with existing customers and earning repeat
-              business. We are committed to transparency and accountability in
-              all our operations, and we strive to build long-term relationships
-              with our clients based on trust, integrity, and mutual respect. We
-              believe that by providing exceptional service, we can build
-              long-term relationships with our customers and contribute to
-              building a better world. We recognize that customer value can
-              encompass many factors, including our brand's reliability, the
-              effort level customers need to put in to get what they want, how
-              innovative our products are, how useful our services are, how
-              customers feel about our public image, and how successful their
-              interactions with us are. We believe that understanding customer
-              value and how to calculate it can help our business price products
-              fairly and reduce friction within the customer experience.
-            </p>
-          </LeftTextSection>
-          <ContentSection imageSource="https://picsum.photos/300/200">
-            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl">
-              Innovation
-            </p>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              Our Company is committed to introducing new technologies and
-              upgrades that are designed to achieve both product differentiation
-              and low costs. We believe that innovation is essential to driving
-              growth and creating value for our customers, shareholders, and
-              employees. To achieve this, we follow a customer-centric approach
-              that involves understanding our clients' needs, defining the scope
-              of work, and developing a project plan that meets their
-              requirements. We recognize that innovation is a critical component
-              of building a competitive advantage and driving financial
-              performance. We believe that by providing exceptional service, we
-              can build long-term relationships with our customers and
-              contribute to building a better world. Here are some ways we
-              introduce new technologies and upgrades to achieve product
-              differentiation and low costs:
-            </p>
-            <ol
-              role="list"
-              className="mt-8 space-y-8 text-gray-300 list-decimal list-inside"
-            >
-              <li>
-                We invest in research and development to identify new
-                technologies and upgrades that can improve our products and
-                services
-              </li>
-              <li>
-                We collaborate with our clients to understand their needs and
-                develop customized solutions that meet their specific
-                requirements
-              </li>
-              <li>
-                We continuously monitor the market and industry trends to
-                identify emerging technologies and opportunities for innovation.
-              </li>
-              <li>
-                We establish a culture of innovation that encourages our
-                employee to think creatively and develop new ideas that can
-                drive growth and create value.{" "}
-              </li>
-              <li>
-                We use customer feedback to improve our products and services
-                continually and ensure that they meet the evolving needs of our
-                clients.
-              </li>
-              <li>
-                We invest in training and education to ensure that our employees
-                have the skills and knowledge needed to develop and implement
-                new technologies and upgrades.
-              </li>
-              <li>
-                We recognize that innovation is a long-term process that
-                requires patience, persistence and a willingness to take risks.
-                We are committed to investing in innovation and building a
-                culture of continuous improvement that can drive our growth and
-                success.{" "}
-              </li>
-            </ol>
-          </ContentSection>
         </div>
       </div>
 
@@ -869,7 +457,10 @@ const About = () => {
         </WideImageComponent>
       </div>
 
-      <div className="bg-gradient-to-br via-secondary from-secondary to-primary py-20" id="partners">
+      <div
+        className="bg-gradient-to-br via-secondary from-secondary to-primary py-20"
+        id="partners"
+      >
         <p className="text-center text-3xl mx-5">
           Strategic Alliances & Partnerships
         </p>
@@ -923,22 +514,6 @@ const About = () => {
             />
           </dir>
         </div>
-      </div>
-
-      <div id="leadership" className="">
-        <TeamComponent>
-        {people.map((person) => (
-              <li key={person.name}>
-                <div className="flex items-center gap-x-6">
-                  <img className="h-16 w-16 rounded-full" src={person.imageUrl} alt="" />
-                  <div>
-                    <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
-                    <p className="text-sm font-semibold leading-6 text-gray-600">{person.role}</p>
-                  </div>
-                </div>
-              </li>
-            ))}
-        </TeamComponent>
       </div>
 
       <div

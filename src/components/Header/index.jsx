@@ -52,14 +52,14 @@ const Header = () => {
             ))}
           </ul>
         </nav>
-        <div className="md:block hidden">
+        {/* <div className="md:block hidden">
           <Link
             to={"/contact"}
             className="text-black font-semibold hover:border-b-primary duration-300 transition ease-in-out hover:border-b-4 hover:text-primary py-9"
           >
             Contact Us
           </Link>
-        </div>
+        </div> */}
 
         <div className="md:hidden">
           <button onClick={close}>

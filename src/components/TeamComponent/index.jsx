@@ -7,8 +7,8 @@ export default function index({ children }) {
             Meet our leadership
           </h2>
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            Our leadership play a pivotal role in driving success and
-            fostering growth. Their visionary guidance inspires teams to achieve
+            Our leadership play a pivotal role in driving success and fostering
+            growth. Their visionary guidance inspires teams to achieve
             greatness, their effective communication builds strong
             relationships, their integrity sets the tone for ethical practices,
             and their empathy creates a supportive work culture. With their

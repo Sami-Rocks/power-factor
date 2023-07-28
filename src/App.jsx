@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
 AOS.init();
 
 // You can also pass an optional settings object
@@ -28,7 +29,10 @@ AOS.init({
   anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
 });
 
+
+
 function App() {
+
   return (
     <div>
       <Header />

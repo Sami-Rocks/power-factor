@@ -6,7 +6,10 @@ export default function Csrs() {
   return (
     <div>
       <div id="diversity">
-        <ContentSection heading="Diversity" imageSource="https://picsum.photos/300/200">
+        <ContentSection
+          heading="Diversity"
+          imageSource="https://picsum.photos/300/200"
+        >
           <div>
             <p className="mt-8">
               We recognize that diversity is a key driver of our competitiveness
@@ -156,7 +159,10 @@ export default function Csrs() {
         </LeftTextSection>
       </div>
       <div id="compliance">
-        <ContentSection heading="Compliance" imageSource="https://picsum.photos/300/200">
+        <ContentSection
+          heading="Compliance"
+          imageSource="https://picsum.photos/300/200"
+        >
           <div>
             <p>
               Our company has put in place arrangements to help ensure that it

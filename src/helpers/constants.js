@@ -13,43 +13,39 @@ export const navigation = [
       },
       {
         title: "Our Values",
-        link: "/about#values",
+        link: "/about/values",
       },
       {
         title: "Vision & Values",
-        link: "/about#vision",
+        link: "/about/vision",
       },
       {
-        title:"Our Mission",
-        link:"/about#mission"
+        title: "Our Mission",
+        link: "/about/mission",
       },
       {
         title: "Our Leadership",
-        link: "/about#leadership",
+        link: "/about/leadership",
       },
       {
         title: "Our History",
-        link: "/about#history",
+        link: "/about/history",
       },
-      {
-        title: "Governance",
-        link: "/about#governance",
-      },
-      {
-        title: "Business Ethics",
-        link: "/about#ethics",
-      },
-      {
-        title: "Labour Practices and Human Rights",
-        link: "/about#practices",
-      },
-      {
-        title: "HSEQ",
-        link: "/about#hseq",
-      },
+      // {
+      //   title: "Governance",
+      //   link: "/about/governance",
+      // },
+      // {
+      //   title: "Business Ethics",
+      //   link: "/about/ethics",
+      // },
+      // {
+      //   title: "Labour Practices and Human Rights",
+      //   link: "/about/practices",
+      // },
       {
         title: "Where We Operate",
-        link: "/about#where-we-operate",
+        link: "/about/contact",
       },
     ],
   },
@@ -59,36 +55,27 @@ export const navigation = [
     children: [
       {
         title: "What We Do",
-        link: "/business#business#what-we-do",
-      },
-      {
-        title: "Subsea and Conventional",
-        link: "/business#subsea",
-      },
-      {
-        title: "Seaway7",
-        link: "/business#seaway",
+        link: "/business",
       },
       {
         title: "Autonomous Subsidiaries",
-        link: "/business#subsidiaries",
+        link: "/business/subsidiaries",
       },
       {
         title: "Alliances and Partnerships",
-        link: "/business#business#alliances",
-        // /about#partners
+        link: "/about#partners",
       },
       {
         title: "Joint Ventures",
-        link: "/business#ventures",
+        link: "/business/ventures",
       },
       {
         title: "Technology",
-        link: "/business#technonlogy",
+        link: "/business/technonlogy",
       },
       {
         title: "Assets",
-        link: "/business#assets",
+        link: "/business/assets",
       },
     ],
   },
@@ -98,19 +85,19 @@ export const navigation = [
     children: [
       {
         title: "Our Approach",
-        link: "/sustainability#approach",
+        link: "/sustainability/approach",
       },
       {
         title: "Our Priorities and Focus Areas",
-        link: "/sustainability#priorities",
+        link: "/sustainability/priorities",
       },
       {
         title: "Our Commitments and Targets",
-        link: "/sustainability#commitments",
+        link: "/sustainability/commitments",
       },
       {
         title: "Our Performance and Reporting",
-        link: "/sustainability#performance",
+        link: "/sustainability/performance",
       },
     ],
   },
@@ -150,19 +137,19 @@ export const navigation = [
     children: [
       {
         title: "Current Vacancies",
-        link: "/people#vacancies",
+        link: "/people/vacancies",
       },
       {
         title: "Our Graduate Development Programme",
-        link: "/people#graduate#programme",
+        link: "/people/graduate",
       },
       {
         title: "Frequently Asked Questions",
-        link: "/people#faq",
+        link: "/people/faq",
       },
       {
         title: "Recruitment Fraud",
-        link: "/people#recruitment-fraud",
+        link: "/people/recruitment-fraud",
       },
     ],
   },
@@ -173,19 +160,19 @@ export const navigation = [
     children: [
       {
         title: "Health, Safety & Environment",
-        link: "/csrd#safety",
+        link: "/csrd/safety",
       },
       {
         title: "Ethics",
-        link: "/csrs#ethics",
+        link: "/csrs/ethics",
       },
       {
         title: "Compliance",
-        link: "/csrs#compliance"
+        link: "/csrs/compliance",
       },
       {
         title: "Human Rights & Diversity & Inclusion",
-        link: "/csrs#diversity",
+        link: "/csrs/diversity",
       },
     ],
   },
