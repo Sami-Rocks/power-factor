@@ -3,6 +3,12 @@ import ContentSection from "../../components/ContentSections";
 import RightTextSection from "../../components/RightTextSections";
 import LeftTextSection from "../../components/LeftTextSections";
 
+import integrity_image from "../../assets/images/integrity-3.jpeg";
+import professionalism from "../../assets/images/professionalism.webp";
+import innovation from "../../assets/images/innovation.webp";
+import quality from "../../assets/images/quality3.webp";
+import safety from "../../assets/images/safety-3.jpeg";
+
 const Values = () => {
   return (
     <div
@@ -20,7 +26,7 @@ const Values = () => {
             customers’ individual needs in all our business lines
           </p>
         </div>
-        <LeftTextSection imageSource="https://picsum.photos/300/200">
+        <LeftTextSection imageSource={integrity_image}>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl">
             Integrity
           </p>
@@ -43,7 +49,7 @@ const Values = () => {
             stakeholders and contribute to building a better world.
           </p>
         </LeftTextSection>
-        <RightTextSection imageSource="https://picsum.photos/300/200">
+        <RightTextSection imageSource={professionalism}>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl">
             Professionalism
           </p>
@@ -68,7 +74,7 @@ const Values = () => {
             our stakeholders and contribute to building a better world.
           </p>
         </RightTextSection>
-        <ContentSection imageSource="https://picsum.photos/300/200">
+        <ContentSection imageSource={safety}>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl">
             Safety
           </p>
@@ -130,7 +136,7 @@ const Values = () => {
             </li>
           </ol>
         </ContentSection>
-        <LeftTextSection imageSource="https://picsum.photos/300/200">
+        <LeftTextSection imageSource={quality}>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl">
             Quality
           </p>
@@ -159,7 +165,7 @@ const Values = () => {
             fairly and reduce friction within the customer experience.
           </p>
         </LeftTextSection>
-        <ContentSection imageSource="https://picsum.photos/300/200">
+        <ContentSection imageSource={innovation}>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-300 sm:text-4xl">
             Innovation
           </p>

@@ -15,6 +15,8 @@ const LazyLeadership = lazy(() => import("../pages/about/leadership.jsx"));
 const LazyMission = lazy(() => import("../pages/about/mission.jsx"));
 const LazyValues = lazy(() => import("../pages/about/values.jsx"));
 const LazyVision = lazy(() => import("../pages/about/vision.jsx"));
+const LazyCsrc = lazy(() => import("../pages/Csrs.jsx"));
+
 
 const router = createBrowserRouter([
   {
@@ -107,10 +109,14 @@ const router = createBrowserRouter([
           </SuspendedComponent>
         ),
       },
-      // {
-      //   path: "/csrs",
-      //   element: <Csrs />,
-      // },
+      {
+        path: "/csrs",
+        element: (
+          <SuspendedComponent>
+            <LazyCsrc />
+          </SuspendedComponent>
+        ),
+      },
     ],
   },
 ]);

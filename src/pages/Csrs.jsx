@@ -2,13 +2,19 @@ import ContentSection from "../components/ContentSections";
 import RightTextSection from "../components/RightTextSections";
 import LeftTextSection from "../components/LeftTextSections";
 
+import Integrity from "../assets/images/integrity-2.jpg";
+import Diversity from "../assets/images/diversity.webp";
+import CodeOfConduct from "../assets/images/code-of-conduct.jpg"
+import Compliance from "../assets/images/compliance.jpg"
+
+
 export default function Csrs() {
   return (
     <div>
       <div id="diversity">
         <ContentSection
           heading="Diversity"
-          imageSource="https://picsum.photos/300/200"
+          imageSource={Diversity}
         >
           <div>
             <p className="mt-8">
@@ -116,7 +122,7 @@ export default function Csrs() {
             these values in all our dealings.
           </p>
         </div>
-        <RightTextSection imageSource="https://picsum.photos/300/200">
+        <RightTextSection imageSource={Integrity}>
           <div>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Ethic Policy Statement
@@ -143,7 +149,7 @@ export default function Csrs() {
             </p>
           </div>
         </RightTextSection>
-        <LeftTextSection imageSource="https://picsum.photos/300/200">
+        <LeftTextSection imageSource={CodeOfConduct}>
           <div>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Our Code of Conduct
@@ -161,7 +167,7 @@ export default function Csrs() {
       <div id="compliance">
         <ContentSection
           heading="Compliance"
-          imageSource="https://picsum.photos/300/200"
+          imageSource={Compliance}
         >
           <div>
             <p>

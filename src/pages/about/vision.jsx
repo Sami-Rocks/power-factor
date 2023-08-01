@@ -1,5 +1,7 @@
 import RightTextSection from "../../components/RightTextSections";
 import LeftTextSection from "../../components/LeftTextSections";
+import mission_image from "../../assets/images/image-002.webp";
+import service from "../../assets/images/image-001.webp";
 
 const Vision = () => {
   return (
@@ -9,7 +11,7 @@ const Vision = () => {
           Our Vision
         </h2>
       </div>
-      <RightTextSection imageSource="https://picsum.photos/300/200">
+      <RightTextSection imageSource={mission_image}>
         <div>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             To be the preferred company of choice for the provision of Design,
@@ -36,7 +38,7 @@ const Vision = () => {
           </p>
         </div>
       </RightTextSection>
-      <LeftTextSection imageSource="https://picsum.photos/300/200">
+      <LeftTextSection imageSource={service}>
         <div>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             To create value for our customers by providing exceptional service

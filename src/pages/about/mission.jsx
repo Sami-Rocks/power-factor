@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import RightTextSection from "../../components/RightTextSections";
+import mission_image from "../../assets/images/mission.webp";
 
 const Mission = () => {
   return (
@@ -9,7 +10,7 @@ const Mission = () => {
           Our Mission
         </h2>
       </div>
-      <RightTextSection imageSource="https://picsum.photos/300/200">
+      <RightTextSection imageSource={mission_image}>
         <div>
           <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
             To provide a responsive, safe, cost effective and reliable solutions

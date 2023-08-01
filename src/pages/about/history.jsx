@@ -1,11 +1,12 @@
 import ContentSection from "../../components/ContentSections";
+import history_image from "../../assets/images/history.jpeg";
 
 const History = () => {
   return (
     <div id="history">
       <ContentSection
         heading="History"
-        imageSource="https://picsum.photos/300/200"
+        imageSource={history_image}
       >
         <div>
           <p>

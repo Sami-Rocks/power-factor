@@ -15,6 +15,7 @@ import cert3 from "./../assets/images/certificates/ISO450012018-1.jpg";
 import about_image_1 from "./../assets/images/about.webp";
 import about_image_2 from "./../assets/images/IMG_0087 (1).webp";
 import about_image_3 from "./../assets/images/commissioning.webp";
+import about_image_4 from "./../assets/images/purpose.jpeg";
 
 import about_gallery_1 from "./../assets/images/IMG_0551.webp";
 import about_gallery_2 from "./../assets/images/Image-012.webp";
@@ -318,7 +319,7 @@ const About = () => {
       </div>
 
       <div id="purpose">
-        <LeftTextSection imageSource="https://picsum.photos/300/200">
+        <LeftTextSection imageSource={about_image_4}>
           <div>
             <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
               Our Purpose

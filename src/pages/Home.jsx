@@ -38,7 +38,7 @@ const Home = () => {
         <div className="container">
           <p className="font-medium mb-10 text-3xl leading-10 py-10">
             <span className="text-sm mb-2 mr-10">WELCOME </span>
-            At Power Factor Limited our focus is is awesome on customers,
+            At Power Factor Limited our focus is awesome on customers,
             capability and...
           </p>
         </div>
